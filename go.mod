@@ -1,4 +1,4 @@
-module hermes
+module github.com/StyxOath/hermes
 
 go 1.21.5
 
