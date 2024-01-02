@@ -1,6 +1,6 @@
 package gateway
 
-import "hermes/structs"
+import "github.com/StyxOath/hermes/structs"
 
 type ApplicationCommandPermissionsUpdateEvent structs.GuildApplicationCommandPermissions
 
