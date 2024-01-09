@@ -47,8 +47,7 @@ func (gateway Gateway) Listen() {
 		var message []byte
 		err := websocket.Message.Receive(gateway.ws, &message)
 		if err != nil {
-			log.Println(err.Error())
-			os.Exit(1)
+			panic(err)
 		}
 		gateway.events <- message
 	}
