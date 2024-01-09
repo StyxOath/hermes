@@ -2,7 +2,6 @@ package gateway
 
 import (
 	"encoding/json"
-	"os"
 
 	"golang.org/x/net/websocket"
 )
