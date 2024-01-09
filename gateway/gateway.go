@@ -2,7 +2,6 @@ package gateway
 
 import (
 	"encoding/json"
-	"log"
 	"os"
 
 	"golang.org/x/net/websocket"
@@ -58,7 +57,6 @@ func (gateway Gateway) Listen() {
 func (gateway Gateway) handle() {
 	for {
 		event := <-gateway.events
-		log.Println(string(event))
 
 		var message GatewayEvent
 		json.Unmarshal(event, &message)
